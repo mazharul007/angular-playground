@@ -1,13 +1,10 @@
 <div class="container">
     <div class="row">
-        <div class="col-12">
-            <img [src]="baseUrl" alt="" class="text-center">
-            <form>
-                <div class="form-group mb-4">
-                    <input type="text" class="form-control" placeholder="filter by city ">
-                </div>
-                <button type="button" class="btn btn-primary">Search</button>
-            </form>
+        <div class="col-4">
+            <img class="listing-photo w-100 " [src]="housingLocation.photo"
+                alt="Exterior photo of {{housingLocation.name}}">
+            <h2 class="listing-heading">{{ housingLocation.name }}</h2>
+            <p class="listing-location">{{ housingLocation.city}}, {{housingLocation.state }}</p>
         </div>
     </div>
 </div>

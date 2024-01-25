@@ -1,5 +1,5 @@
 export interface AngularFundamentals {
-    id: number;
+    id: any;
     name: string;
     city: string;
     state: string;
