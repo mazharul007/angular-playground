@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AngularFundamentalsModule } from 'src/angular-fundamentals/angular-fundamentals.module';
+import { MenuModule } from 'src/shared/menu/menu.module';
+import { DetailsPageComponent } from './pages/details-page/details-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetailsPageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
-    AngularFundamentalsModule
+    AngularFundamentalsModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
