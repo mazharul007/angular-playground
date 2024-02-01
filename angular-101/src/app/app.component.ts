@@ -12,11 +12,4 @@ export class AppComponent {
 
   data: AngularFundamentals[] = [];
 
-  constructor(private housingService: HousingService) {
-    this.data = this.housingService.getAllHousingLocations();
-  }
-
-
-
-
 }

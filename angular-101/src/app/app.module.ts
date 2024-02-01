@@ -6,6 +6,7 @@ import { AngularFundamentalsModule } from 'src/angular-fundamentals/angular-fund
 import { MenuModule } from 'src/shared/menu/menu.module';
 import { DetailsPageComponent } from './pages/details-page/details-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
   imports: [
     BrowserModule,
     AngularFundamentalsModule,
-    MenuModule
+    MenuModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
