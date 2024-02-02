@@ -7,6 +7,7 @@ import { MenuModule } from 'src/shared/menu/menu.module';
 import { DetailsPageComponent } from './pages/details-page/details-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     AngularFundamentalsModule,
     MenuModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
